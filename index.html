@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
     <title>Mccoy_site | Political Caricatures</title>
     <style>
-       {
+        body {
             font-family: 'Georgia', serif;
-            background-color: #fdfaf1; /* Cream/Vintage background */
             margin: 0;
             padding: 0;
             color: #333;
             line-height: 1.8;
+            background-color: #fdfaf1;
+            /* Logo: Malinaw at may 3% margin sa kaliwa para hindi nakadikit */
+            background-image: url("bpsu.jpg");    
+            background-repeat: no-repeat;
+            background-position: 10% center; /* Inurong sa kanan ng 3% para may space sa gilid */
+            background-size: 33.33% auto; 
+            background-attachment: fixed;
         }
 
-        /* Header Image Placeholder */
+        /* Name & Student No: Low opacity/Malabo at 3cm gap mula sa kanan */
+        .student-info {
+            position: fixed;
+            right: 3cm; 
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: right;
+            color: rgba(0, 0, 0, 0.3); 
+            font-weight: bold;
+            font-size: 1.1rem;
+            z-index: 1000;
+            pointer-events: none;
+        }
+
         .header-image {
             width: 100%;
             height: 400px;
@@ -40,14 +58,16 @@
             letter-spacing: 3px;
         }
 
-        /* Content Container */
         .container {
-            max-width: 900px;
+            max-width: 850px;
             margin: -50px auto 50px;
-            background: white;
+            /* Transparent white background para aninag ang malinaw na logo */
+            background: rgba(255, 255, 255, 0.85); 
             padding: 50px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             border-radius: 10px;
+            position: relative;
+            z-index: 5;
         }
 
         h2 {
@@ -64,11 +84,6 @@
             margin-bottom: 30px;
         }
 
-        .content-section {
-            margin-bottom: 30px;
-        }
-
-        /* Footer Styling */
         footer {
             background-color: #2c2c2c;
             color: #aaa;
@@ -76,18 +91,14 @@
             padding: 30px;
             font-size: 0.9rem;
         }
-
-        footer a {
-            color: #d4a373;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
+
+    <div class="student-info">
+        Aerenz Rie M. Banting<br>
+        25-03282
+    </div>
 
     <div class="header-image">
         <div class="header-text">
@@ -99,40 +110,45 @@
     <div class="container">
         <p class="intro">Isang malalim na pagsusuri sa kasaysayan ng Pilipinas sa pamamagitan ng sining</p>
 
-        <div class="content-section">
+        <section>
+            <h2>Sino si Alfred McCoy sa Kasaysayan?</h2>
+            <p>Si <strong>Alfred McCoy</strong> ay isang Amerikanong istoryador na naglaan ng panahon upang pag-aralan ang aspetong "visual" ng ating kasaysayan. Ayon sa kanya, ang mga cartoons ay "mirrors of the society's subconscious" o salamin ng mga saloobin na hindi laging lumalabas sa mga pormal na dokumento ng gobyerno. Ang kanyang pagsasaliksik kasama si Alfredo Roces ay nagbigay ng bagong perspektibo sa kung paano natin tinitignan ang panahon ng mga Amerikano sa Pilipinas.</p>
+        </section>
 
-<section>
-  <h2>Sino si Alfred McCoy sa Kasaysayan?</h2>
-  <p>Si <strong>Alfred McCoy</strong> ay isang Amerikanong istoryador na naglaan ng panahon upang pag-aralan ang aspetong "visual" ng ating kasaysayan. Ayon sa kanya, ang mga cartoons ay "mirrors of the society's subconscious" o salamin ng mga saloobin na hindi laging lumalabas sa mga pormal na dokumento ng gobyerno. Ang kanyang pagsasaliksik kasama si Alfredo Roces ay nagbigay ng bagong perspektibo sa kung paano natin tinitignan ang panahon ng mga Amerikano sa Pilipinas.</p>
-</section>
-
+        <section>
             <h2>Ang Kabuluhan ng Philippine Cartoons</h2>
             <p>Ang librong <strong>"Philippine Cartoons: Political Caricatures of the American Era"</strong> na isinulat ni Alfred McCoy at Alfredo Roces ay hindi lamang basta koleksyon ng mga drowing. Ito ay nagsisilbing bintana sa tunay na saloobin ng mga Pilipino noong panahon ng pananakop ng mga Amerikano (1900-1941). Ang bawat guhit ay may dalang matalas na kritismo laban sa mga isyung panlipunan na kinakaharap ng bansa noon.</p>
-        </div>
-       
-<section>
-  <h2>Ang Konteksto ng Panahon</h2>
-  <p>Ang mga caricatures na nakolekta ni Alfred McCoy ay nagmula sa panahon kung saan ang Pilipinas ay nasa ilalim ng transisyon mula sa pananakop ng Espanya patungo sa Amerika. Sa panahong ito, ang press o pahayagan ay nagsilbing boses ng malayang kaisipan. Ang mga editorial cartoons ay naging mabisang paraan upang maipakita ang diskuntento ng mga mamamayan sa mga polisiya ng mga bagong mananakop na hindi madaling maipahayag sa paraang pasulat.</p>
-</section>
-     
-        <div class="content-section">
+        </section>
+
+        <section>
+            <h2>Ang Konteksto ng Panahon</h2>
+            <p>Ang mga caricatures na nakolekta ni Alfred McCoy ay nagmula sa panahon kung saan ang Pilipinas ay nasa ilalim ng transisyon mula sa pananakop ng Espanya patungo sa Amerika. Sa panahong ito, ang press o pahayagan ay nagsilbing boses ng malayang kaisipan. Ang mga editorial cartoons ay naging mabisang paraan upang maipakita ang diskuntento ng mga mamamayan sa mga polisiya ng mga bagong mananakop na hindi madaling maipahayag sa paraang pasulat.</p>
+        </section>
+
+        <section>
             <h2>Mga Pangunahing Tema ng mga Caricature</h2>
             <ul>
-                <li><strong>Anti-American Sentiments:</strong> Ipinapakita rito ang pagtutol ng mga Pilipino sa ilang polisiya ng Amerika na tila hindi patas para sa mga lokal na mamamayan.</li>
+                <li><strong>Anti-American Sentiments:</strong> Pagtutol ng mga Pilipino sa ilang polisiya ng Amerika na tila hindi patas para sa mga lokal na mamamayan.</li>
                 <li><strong>Social Criticism:</strong> Binabatikos ng mga cartoons ang mabilis na pagbabago ng moralidad at ang pagyakap ng mga kabataan sa kulturang kanluranin habang nakakalimutan ang sariling tradisyon.</li>
                 <li><strong>Political Corruption:</strong> Maraming drowing ang nagpapakita ng mga politikong Pilipino na tila naging "puppet" o sunud-sunuran sa mga dayuhan para lamang sa sariling interes.</li>
-  <li><strong>Urbanisasyon at Trapiko:</strong> Isa sa mga kilalang caricature ay nagpapakita ng kaguluhan sa kalsada ng Maynila dahil sa pagpasok ng mga kotse habang nandoon pa rin ang mga kalesa. Ipinapakita nito ang kawalan ng maayos na pagpaplano sa mabilis na modernisasyon.</li>
-  <li><strong>Kritika sa Edukasyon:</strong> Binabatikos din ng ilang guhit ang sistema ng edukasyon na tila nagtuturo sa mga Pilipino na mas pahalagahan ang kasaysayan at kultura ng Amerika kaysa sa sariling atin.</li>
-  <li><strong>Double Standard sa Hustisya:</strong> May mga cartoons na nagpapakita kung paano mas pinapaboran ng batas ang mga mayayaman at makapangyarihan habang ang mga mahihirap ay madaling napaparusahan sa maliliit na pagkakamali.</li>
-</ul>
-<h2> Bakit Mahalaga ang Sining ni McCoy?</h2>
-    <p>Ayon kay McCoy, ang mga cartoons ay nagsisilbing <i>"Mirror of the Society."</i> Ibig sabihin, dito natin makikita ang mga totoong emosyon—takot, galit, at pag-asa—na hindi madalas naisusulat sa mga pormal na aklat ng kasaysayan. Ito ay isang mahalagang "Primary Source" para sa mga estudyante ng kasaysayan.</p>
-        <a href="page2.html">Page 2</a>
+                <li><strong>Urbanisasyon at Trapiko:</strong> Isa sa mga kilalang caricature ay nagpapakita ng kaguluhan sa kalsada ng Maynila dahil sa pagpasok ng mga kotse habang nandoon pa rin ang mga kalesa. Ipinapakita nito ang kawalan ng maayos na pagpaplano sa mabilis na modernisasyon.</li>
+                <li><strong>Kritika sa Edukasyon:</strong> Binabatikos din ng ilang guhit ang sistema ng edukasyon na tila nagtuturo sa mga Pilipino na mas pahalagahan ang kasaysayan at kultura ng Amerika kaysa sa sariling atin.</li>
+                <li><strong>Double Standard sa Hustisya:</strong> May mga cartoons na nagpapakita kung paano mas pinapaboran ng batas ang mga mayayaman at makapangyarihan habang ang mga mahihirap ay madaling napaparusahan sa maliliit na pagkakamali.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Bakit Mahalaga ang Sining ni McCoy?</h2>
+            <p>Ayon kay McCoy, ang mga cartoons ay nagsisilbing <i>"Mirror of the Society."</i> Ibig sabihin, dito natin makikita ang mga totoong emosyon—takot, galit, at pag-asa—na hindi madalas naisusulat sa mga pormal na aklat ng kasaysayan. Ito ay isang mahalagang "Primary Source" para sa mga estudyante ng kasaysayan.</p>
+        </section>
+
+        <p style="text-align: center; margin-top: 40px;">
+            <a href="page2.html" style="color: #8b5e34; font-weight: bold; text-decoration: none;">Proceed to Page 2 &rarr;</a>
+        </p>
     </div>
 
     <footer>
         <p>&copy; 2026 Mccoy Site Project | BSEE-1C Bataan Peninsula State University</p>
-        
     </footer>
 
 </body>
